@@ -1,0 +1,31 @@
+## Windows ##
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+
+## Mac ##
+.DS_Store
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+._*
+
+## project file ##
+
+# files #
+config.codekit
+*.map
+.sass-cache
+temp
+
+# Node.jsモジュールのディレクトリは無視
+node_modules
+
+# コード生成用ディレクトリは無視
+dev
