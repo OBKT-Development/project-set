@@ -1,0 +1,195 @@
+// Project Settings
+@import "util/baseset";
+
+//* ==================================================
+//	FontSet
+//================================================== */
+@mixin fontset_html_ja {
+  font-size: 62.5%; // = 10px = 1rem
+	font-family: $fontSansJa;
+  line-height: 1.6;
+}
+
+@mixin fontset_body_ja {
+	font-size: 14px;
+	font-size: 1.4em; // = 14px
+	// if you use 'rem' bug occurred in chrome
+}
+
+@mixin fontset_html_en {
+  font-size: 62.5%; // = 10px = 1rem
+	font-family: $fontSansEn;
+  line-height: 1.6;
+}
+
+@mixin fontset_body_en {
+	font-size: 14px;
+	font-size: 1.4em; // = 12px
+	// if you use 'rem' bug occurred in chrome
+}
+
+
+//* ==================================================
+//	Contents Width
+//================================================== */
+$InnerMinWidth: 1040px;
+$InnerMaxWidth: 1456px;
+$InnerMinWidth_sp: 320px; // iPhone5 Screen Size
+$InnerMaxWidth_sp: 414px; // iPhone6 Plus Screen Size
+
+
+//* ==================================================
+//	Color Scheme
+//================================================== */
+$white: #ffffff;
+$black: #000000;
+
+$baseTextColor: #111111;
+$baseLinkColor: #3c3c3c;
+
+
+//* ==================================================
+//	Form Styles
+//================================================== */
+input,
+select,
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border: none;
+	border-radius: 0;
+	outline:none;
+	background: none;
+}
+
+// .input__error {
+// 	width: auto;
+// 	font-size: 12px;
+// 	font-size: 1.2rem;
+// 	display: block;
+// }
+// .input__text {
+// 	border: 2px solid #dcdcdc;
+// 	font-size: 14px;
+// 	font-size: 1.4rem;
+// 	box-sizing: border-box;
+// 	width: 100%;
+// 	height: 36px;
+// 	padding: 0 5px;
+// 	&:disabled {
+// 		background: $white;
+// 	}
+// }
+// .input__select {
+// 	display: inline-block;
+// 	height: 36px;
+// 	border: 2px solid #dcdcdc;
+// 	box-sizing: border-box;
+// 	background: $white;
+// 	overflow: hidden;
+// 	position: relative;
+// }
+// .input__select:after {
+// 	content: "";
+// 	display: block;
+// 	position: absolute;
+// 	top: 0;
+// 	bottom: 0;
+// 	right: x8grd(1);
+// 	margin: auto 0;
+// 	width: 0px;
+// 	height: 0px;
+// 	border-top: 8px solid #636363;
+// 	border-right: 6px solid transparent;
+// 	border-bottom: 0px solid transparent;
+// 	border-left: 6px solid transparent;
+// 	pointer-events: none;
+// }
+// .input__select .input__select_style {
+// 	border-radius: 0;
+// 	font-size: 14px;
+// 	font-size: 1.4rem;
+// 	width: 160%;
+// 	height: 100%;
+// 	padding-left: 5px;
+// 	cursor: pointer;
+// }
+// .input__checkbox input[type="checkbox"] {
+// 	display: none;
+// }
+// .input__checkbox input[type="checkbox"]:checked + label .input__checkbox_mark:after {
+// 	content: '';
+// 	width: 4px;
+// 	height: 8px;
+// 	display: block;
+// 	border-right: 2px solid #636363;
+// 	border-bottom: 2px solid #636363;
+// 	-webkit-transform: rotate(45deg);
+// 	-ms-transform: rotate(45deg);
+// 	transform: rotate(45deg);
+// 	-webkit-transform-origin: 50% 50%;
+// 	-ms-transform-origin: 50% 50%;
+// 	transform-origin: 50% 50%;
+// 	position: absolute;
+// 	top: 0;
+// 	bottom: 0;
+// 	left: 0;
+// 	right: 0;
+// 	z-index: 100;
+// 	margin: auto;
+// }
+// .input__checkbox_mark {
+// 	width: 16px;
+// 	height: 16px;
+// 	background: $white;
+// 	z-index: 10;
+// 	display: inline-block;
+// 	margin-right: 8px;
+// 	box-sizing: border-box;
+// 	vertical-align: middle;
+// 	border: 2px #dcdcdc solid;
+// 	vertical-align: middle;
+// 	position: relative;
+// 	cursor: pointer;
+// }
+// .input__checkbox span {
+// 	display: inline-block;
+// 	vertical-align: middle;
+// }
+// .input__textarea {
+// 	width: 100%;
+// 	height: 200px;
+// 	border: 2px solid #dcdcdc;
+// 	box-sizing: border-box;
+// 	padding: 5px;
+// }
+// .input__file_style input[type="file"] {
+// 	display: none;
+// }
+// .input__file_style span {
+// 	display: inline-block;
+// 	vertical-align: middle;
+// }
+// .input__file_style label span {
+// 	display: inline-block;
+// 	-webkit-appearance: none;
+// 	-moz-appearance: none;
+// 	text-align: center;
+// 	vertical-align: middle;
+// }
+// .input__file_style label {
+// 	display: inline-block;
+// 	font-size: 14px;
+// 	font-size: 1.4rem;
+// 	letter-spacing: 0.09em;
+// }
+// .input__submit {
+// 	-webkit-appearance: none;
+// 	border: none;
+// 	border-radius: 4px;
+// 	font-size: 13px;
+// 	font-size: 1.3rem;
+// 	padding: 15px 20px;
+// 	color: $white;
+// 	display: block;
+// }

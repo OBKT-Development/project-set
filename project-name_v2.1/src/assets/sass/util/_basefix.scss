@@ -1,0 +1,35 @@
+// Base Fix
+
+//* ==================================================
+//	Css Helper
+//================================================== */
+
+.unactive{
+	pointer-events: none;
+}
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+//* ==================================================
+//	Module
+//================================================== */
+
+.is--table {
+	display: table;
+}
+.is--table_caption {
+	display: table-caption;
+}
+.is--table_row {
+	display: table-row;
+}
+.is--table_head {
+	display: table-cell;
+}
+.is--table_text {
+	display: table-cell;
+}
